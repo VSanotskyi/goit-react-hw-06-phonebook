@@ -1,10 +1,15 @@
 const ContactsItem = ({ contact, removeContact }) => {
   const { name, number, id } = contact;
+
+  const handleClick = () => {
+    removeContact(id);
+  };
+  
   return (
     <li>
       <p>{name}</p>
       <p>{number}</p>
-      <button onClick={() => removeContact(id)}>del</button>
+      <button onClick={handleClick}>del</button>
     </li>
   );
 };
