@@ -11,8 +11,8 @@ const checkContact = (contacts, newContact) => {
 };
 
 const ContactsForm = ({ addContact, saveContact }) => {
-
   const { contact, contacts } = useSelector(state => state.contacts);
+
   const handleChange = ({ target: { value, name } }) => {
     saveContact({ [name]: value });
   };

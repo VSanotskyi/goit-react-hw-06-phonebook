@@ -6,7 +6,7 @@ const ContactsSearchForm = ({ searchContact, filter }) => {
   return (
     <div>
       <label>
-        <span>Search contact</span>
+        <span>Search contact: </span>
         <input type="text"
                name="name"
                value={filter}
